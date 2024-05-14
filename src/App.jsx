@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     if (coords) {    
-      const apikey = '5a46a43dece0258864c82df13e286dbf';
+      const apikey = '';
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apikey}`;
       axios.get(url)
         .then(res => {
